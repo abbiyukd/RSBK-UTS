@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+	<title>Survey Siswa</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+</h:head>
+
+ 
+<h:body styleClass="indigo darken-4"> 
+	<div class="valign-wrapper" id="login-page">
+		<div class="container">
+			<div class="center-align">
+				<div class="row">
+				<div class="col s8 offset-s2">
+					<div class="card">
+						<div class="card-content">
+						<i class="large material-icons">school</i>
+						<h2>Formulir Survei Siswa</h2>
+						<h4>Survei Mengenai Kampus Universitas Diponegoro</h4>
+							<div class="left-align">
+								<h:form id="login-form">
+									<div class="row">
+										<div class="col s12 input-field">
+										<i class="material-icons prefix">input</i>
+									    <h:inputText value="#{index.firstName}" required="true" requiredMessage="Nama Tidak boleh kosong!!" id="form1"></h:inputText>
+									    <h:message for="form1" class="blue-text text-darken-2"></h:message>
+									    <label for="form1">Nama Depan</label>
+									    </div>
+									    <br /><br />
+									    <div class="col s12 input-field">
+										<i class="material-icons prefix">input</i>
+									    <h:inputText value="#{index.lastName}" required="true" requiredMessage="Nama Tidak boleh kosong!!" id="form2">
+									    </h:inputText>
+									    <h:message for="form2" class="blue-text text-darken-2"></h:message>
+									    <label for="form2">Nama Belakang</label>
+									    </div>
+									    <br /><br />
+									    <div class="col s12 input-field">
+										<i class="material-icons prefix">input</i>
+									    <h:inputText value="#{index.address}" required="true" requiredMessage="Field Tidak boleh kosong!!" id="form3">
+									    </h:inputText>
+									    <h:message for="form3" class="blue-text text-darken-2"></h:message>
+									    <label for="form3">Alamat Jalan</label>
+									    </div>
+									    <br /><br />
+									    <div class="col s12 input-field">
+										<i class="material-icons prefix">input</i>
+									    <h:inputText value="#{index.city}" required="true" requiredMessage="Field Tidak boleh kosong!!" id="form4">
+									    </h:inputText>
+									    <h:message for="form4" class="blue-text text-darken-2"></h:message>
+									    <label for="form4">Kota\</label>
+									    </div>
+									    <br /><br />
+									   
+									    <div class="col s12 input-field">
+										<i class="material-icons prefix">input</i>
+									    <h:inputText value="#{index.codePos}" required="true" requiredMessage="Field Tidak boleh kosong!!" id="form6">
+									    </h:inputText>
+									    <h:message for="form6" class="blue-text text-darken-2"></h:message>
+									    <label for="form6">Kode Pos</label>
+									    </div>
+									    <br /><br />
+									    <div class="col s12 input-field">
+										<i class="material-icons prefix">input</i>
+									    <h:inputText value="#{index.phoneNumber}" required="true" requiredMessage="Field Tidak boleh kosong!!" id="form7">
+									    </h:inputText>
+									    <h:message for="form7" class="blue-text text-darken-2"></h:message>
+									    <label for="form7">Nomor HP</label>
+									    </div>
+									    <br /><br />
+									    <div class="col s12 input-field">
+										<i class="material-icons prefix">input</i>
+									    <h:inputText value="#{index.email}" required="true" requiredMessage="Field Tidak boleh kosong!!" id="form8">
+									    </h:inputText>
+									    <h:message for="form8" class="blue-text text-darken-2"></h:message>
+									    <label for="form8">Email</label>
+									    </div>
+									    <br /><br />
+									    <div class="col s12 input-field">
+										<i class="material-icons prefix">input</i>
+									    <h:inputText value="#{index.date}" type="date" required="true" requiredMessage="Field Tidak boleh kosong!!"
+									        id="form9"></h:inputText>
+									    <h:message for="form9" class="blue-text text-darken-2"></h:message>
+									    <label for="form9">Tanggal Survey</label>
+									    </div>
+									    <div class="col s12">
+									    <blockquote>
+									    <h5>Apa yang anda sukai dari Universitas Diponegoro:</h5>
+						 				</blockquote>
+									    	<p>
+									    	<label>
+									    	<input type="checkbox"/>
+									    	<span>Siswa</span>
+									    	</label>
+									    	</p>
+									    	<p>
+									    	<label>
+									    	<input type="checkbox"/>
+									    	<span>Lokasi</span>
+									    	</label>
+									    	</p>
+									    	<p>
+									    	<label>
+									    	<input type="checkbox"/>
+									    	<span>Kampus</span>
+									    	</label>
+									    	</p>
+									    	<p>
+									    	<label>
+									    	<input type="checkbox"/>
+									    	<span>Suasana</span>
+									    	</label>
+									    	</p>
+									    	<p>
+									    	<label>
+									    	<input type="checkbox"/>
+									    	<span>Kamar asrama</span>
+									    	</label>
+									    	</p>
+									    	<p>
+									    	<label>
+									    	<input type="checkbox"/>
+									    	<span>Olahraga</span>
+									    	</label>
+									    	</p>
+									    </div>
+									    
+									    <div class="col s12">
+									    <blockquote>
+									    	<h5>Melalui media apa anda dapat tertarik dengan Universitas Diponegoro:</h5>
+									    </blockquote>
+			                                 <p>
+      											<label>
+        										<input class="with-gap" name="group1" type="radio"  />
+        										<span>Teman</span>
+      											</label>
+    										</p>
+    										<p>
+      											<label>
+        										<input class="with-gap" name="group1" type="radio"  />
+        										<span>Televisi</span>
+      											</label>
+    										</p>
+    										<p>
+      											<label>
+        										<input class="with-gap" name="group1" type="radio"  />
+        										<span>Internet</span>
+      											</label>
+    										</p>
+    										<p>
+      											<label>
+        										<input class="with-gap" name="group1" type="radio"  />
+        										<span>Lainnya</span>
+      											</label>
+    										</p>
+									    </div>
+									    
+									    <div class="col s12">
+									    <blockquote>
+									    <h5>Apakah anda akan merekomendasikan Universitas Diponegoro pada siswa lain:</h5>
+									    </blockquote> 
+										  <select class="browser-default">
+										    <option value="" >Pilih opsi</option>
+										    <option value="Sangat mungkin">Sangat mungkin</option>
+										    <option value="Mungkin">Mungkin</option>
+										    <option value="Tidak mungkin">Tidak mungkin</option>
+										  </select>
+									    </div>
+									    
+									    <div class="col s12 input-field">
+									    <blockquote>
+									    <h5>Komentar Tambahan</h5>
+									    </blockquote>
+									    	
+									    	<h:inputTextarea value="#{index.textArea}" styleClass="browser-default">
+                                
+                                			</h:inputTextarea>
+									    </div>
+									    
+									</div>
+									<div class="right-align">
+										<h:commandButton value="submit" action="survey_result" style="background-color: blue;" styleClass=" btn btn-large"></h:commandButton>
+									</div>
+								</h:form>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<script>
+		$(document).on("ready", function(){
+			$('#login-page').css({'height': window.innerHeight + 'px'});
+		});
+	</script>
+	
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, options);
+  	});	
+  	$('.dropdown-trigger').dropdown();
+	</script>
+</h:body> 
+</html>
